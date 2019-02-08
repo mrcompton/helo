@@ -19,4 +19,4 @@ values(
 );
 
 insert into posts(title,img,content,author_id)
-values('Jolly Roger','Jolly Roger','Arrrrr!!',1);
+values('Gold','https://dailytimes.com.pk/assets/uploads/2018/07/21/Gold.jpg','This is my pirate loot! Arrr!',1);

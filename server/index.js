@@ -17,5 +17,7 @@ app.use(bodyParser.json())
 
 app.post('/auth/register',ctrl.register)
 app.post('/auth/login',ctrl.login)
+app.get(`/api/getposts/:id`,ctrl.getPosts)
+app.get('/api/getonepost/:id',ctrl.getOnePost)
 
 app.listen(SERVER_PORT, () => {console.log('Hejsan från',SERVER_PORT)})

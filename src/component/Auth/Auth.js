@@ -42,9 +42,9 @@ class Auth extends Component{
     render(){
         return(
             <div>
-                <p>Auth</p>
+                <h1>Helo</h1>
                 Username: <input value = {this.state.username} onChange ={(e) => this.handleUpdateUsername(e.target.value)} ></input>
-                Password: <input value = {this.state.password} onChange ={(e) => this.handleUpdatePassword(e.target.value)}></input>
+                Password: <input type="password" value = {this.state.password} onChange ={(e) => this.handleUpdatePassword(e.target.value)}></input>
                 <button onClick={()=>this.handleLogin()}>Login</button>
                 <button onClick={()=>this.handleRegister()}>Register</button>
             </div>

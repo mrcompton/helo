@@ -1,2 +1,2 @@
 select * from users
-where username = ${user}
+where username = ${user} and password = ${pass}

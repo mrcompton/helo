@@ -11,7 +11,7 @@ const Nav = (props) => {
             ? null
             : 
             <div>
-                <p>Nav Component</p>
+                <p>Nav Bar</p>
                 <img src={props.profile_pic} alt="profile"/>
                 <p>Username: {props.username}</p>
                 <Link to='/dashboard'><button>Home</button></Link>
