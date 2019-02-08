@@ -28,7 +28,12 @@ module.exports = {
         .then((response => {res.status(200).send(response)}))
         .catch((err) => res.status(500).send(err))
     },
-    getOnePost: (req,res) => {
-
+    getOnePost: async (req,res) => {
+        const{params} = req
+        console.log({params})
+        const db = req.app.get('db')
+        let post = await db.posts.getOnePost([params.postid])
+        post = post[0]
+        res.status(200).send(post)
     }
 }

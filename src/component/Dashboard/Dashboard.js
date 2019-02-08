@@ -31,18 +31,19 @@ class Dashboard extends Component {
         })
     }
     render() {
-        console.log(this.props)
+        console.log("match.params: ",this.props.match.params)
         const mappedPosts = this.state.postList.map((eachPost) => {
             return (
                 <div className="searchResults">
+                    <img src={eachPost.profile_pic} alt =""/>
                     <div>Title: {eachPost.title}</div>
                     <div>Author: {eachPost.username}</div>
-                    <img src={eachPost.profile_pic} alt =""/>
                 </div>
             )
         })
         return (
             <div>
+                <h2>Hello! Welcome to Helo</h2>
                 Search: <input onChange={(e) => this.handleSearch(e.target.value)}></input>
                 <button>Search</button>
                 <button>Reset</button>
